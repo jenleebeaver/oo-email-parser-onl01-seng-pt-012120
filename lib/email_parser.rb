@@ -4,7 +4,7 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-  
+
   initialize(emails)
   @emails
   end
