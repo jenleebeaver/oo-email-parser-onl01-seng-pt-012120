@@ -13,6 +13,8 @@ class EmailParser
 
   def parse
     email_array = @email.split(/[, ]/).uniq #.uniq removes all duplicate elements from an array
+    email_array.reject! {|element| element.empty?}
+    email_array
   end
 
 end
