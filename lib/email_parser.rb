@@ -6,7 +6,7 @@
 class EmailAddressParser
 
   initialize
-  @emails = emails 
+  @emails = emails
   end
-  
+
 end
