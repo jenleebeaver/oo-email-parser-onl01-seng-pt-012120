@@ -8,11 +8,11 @@ class EmailParser
   attr_accessor :email
 
   def initialize(emails)
-  @email = emails
+    @email = emails
   end
 
   def parse
-    @emails.parse(" ")
+    email_array = @email.split(/[, ]/).uniq #.uniq removes all duplicate elements from an array
   end
 
 end
